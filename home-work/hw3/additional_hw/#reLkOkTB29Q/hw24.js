@@ -38,75 +38,75 @@ let books = [
 // }
 // console.log(booksGanres);
 
-let biggestBook = books[0];
-for (let book1 of books) {
-    if (biggestBook.pages < book1.pages) {
-        biggestBook = book1;
-    }
-}
-console.log(biggestBook);
-
-let maxGanres = books[0].genres.length;
-let booksGanres = [books[0]];
-
-for (let i = 0; i < books.length; i++) {
-    const currentLength = books[i].genres.length;
-
-    if (currentLength > maxGanres) {
-        maxGanres = currentLength ;
-        booksGanres = [books[i]];
-    }
-    else if (currentLength === maxGanres) {
-        booksGanres.push(books[i]);
-    }
-}
-console.log(booksGanres);
-
-let maxName = books[0].name.length;
-let booksName = [books[0]];
-
-for (let j = 0; j < books.length; j++) {
-    const currentName = books[j].name.length;
-
-    if (currentName > maxName){
-        maxName = currentName;
-        booksName = [books[j]];
-    }
-
-    else if (currentName === maxName){
-        booksName.push(books[j]);
-    }
-}
-console.log(booksName);
-
-let maxAuthors = books[0].authors.length;
-let booksAuthors = [books[0]];
-for (let y = 0; y < books.length; y++) {
-    const currentAuthor = books[y].authors.length;
-
-    if(currentAuthor > maxAuthors){
-        maxAuthors = currentAuthor;
-        booksAuthors = [books[y]];
-    }
-    else if (currentAuthor === maxAuthors){
-        booksAuthors.push(books[y]);
-    }
-}
-console.log(booksAuthors);
-
-let minAuthors = books[0].authors.length;
-let booksAuthor = [books[0]];
-
-for (let x = 0; x < books.length; x++){
-    const currentOneAuthor = books[x].authors.length;
-
-    if (currentOneAuthor < minAuthors){
-        minAuthors = currentOneAuthor;
-        booksAuthor = [books[x]];
-    }
-    else if (currentOneAuthor === minAuthors){
-        booksAuthor.push(books[x]);
-    }
-}
-console.log(booksAuthor);
+// let biggestBook = books[0];
+// for (let book1 of books) {
+//     if (biggestBook.pages < book1.pages) {
+//         biggestBook = book1;
+//     }
+// }
+// console.log(biggestBook);
+//
+// let maxGanres = books[0].genres.length;
+// let booksGanres = [books[0]];
+//
+// for (let i = 0; i < books.length; i++) {
+//     const currentLength = books[i].genres.length;
+//
+//     if (currentLength > maxGanres) {
+//         maxGanres = currentLength ;
+//         booksGanres = [books[i]];
+//     }
+//     else if (currentLength === maxGanres) {
+//         booksGanres.push(books[i]);
+//     }
+// }
+// console.log(booksGanres);
+//
+// let maxName = books[0].name.length;
+// let booksName = [books[0]];
+//
+// for (let j = 0; j < books.length; j++) {
+//     const currentName = books[j].name.length;
+//
+//     if (currentName > maxName){
+//         maxName = currentName;
+//         booksName = [books[j]];
+//     }
+//
+//     else if (currentName === maxName){
+//         booksName.push(books[j]);
+//     }
+// }
+// console.log(booksName);
+//
+// let maxAuthors = books[0].authors.length;
+// let booksAuthors = [books[0]];
+// for (let y = 0; y < books.length; y++) {
+//     const currentAuthor = books[y].authors.length;
+//
+//     if(currentAuthor > maxAuthors){
+//         maxAuthors = currentAuthor;
+//         booksAuthors = [books[y]];
+//     }
+//     else if (currentAuthor === maxAuthors){
+//         booksAuthors.push(books[y]);
+//     }
+// }
+// console.log(booksAuthors);
+//
+// let minAuthors = books[0].authors.length;
+// let booksAuthor = [books[0]];
+//
+// for (let x = 0; x < books.length; x++){
+//     const currentOneAuthor = books[x].authors.length;
+//
+//     if (currentOneAuthor < minAuthors){
+//         minAuthors = currentOneAuthor;
+//         booksAuthor = [books[x]];
+//     }
+//     else if (currentOneAuthor === minAuthors){
+//         booksAuthor.push(books[x]);
+//     }
+// }
+// console.log(booksAuthor);
 
