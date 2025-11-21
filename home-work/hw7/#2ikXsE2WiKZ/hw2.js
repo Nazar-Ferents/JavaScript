@@ -20,7 +20,7 @@ let users = [
     new User('Charlie',7,'Calklin','calklin@gmail.com','+386388966549'),
     new User('Frenk',8,'Jalklin','jalklin@gmail.com','+386388966549'),
     new User('Tony',9,'Talklin','talklin@gmail.com','+386388966549'),
-    new User('Steve',10,'Salklin','salklin@gmail.com','+386388966549'),
+    new User('Steve',10,'Salklin','salklin@gmail.com','+386388966549')
 
 ]
 
