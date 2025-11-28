@@ -1,32 +1,27 @@
 
 
 function deepCloner (obj){
-
     if(obj){
+
         let functions = []
-        for (const key in obj){
+        for (let key in obj ){
             if (typeof obj[key] === 'function'){
-
-                let cloneOfFunction = obj[key].bind({})
-                functions.push({cloneOfFunction,key})
-
+                let functionClone = obj[key].bind ({})
+                functions.push ({functionClone, key});
             }
         }
-        let demoClone = JSON.stringify(obj)
-        let objCloner = JSON.parse(demoClone)
+        let objClone = JSON.stringify(obj)
+        let mainClone = JSON.parse(objClone)
         for (let func of functions){
-            objCloner[func.key] = func.cloneOfFunction
-
+            mainClone[func.key] = func.functionClone;
         }
-        console.log(objCloner)
-        return objCloner;
+        return mainClone
+
     }
     else {
-        return 'This object has error';
+        return 'It is wrong type of obj'
     }
-
 
 }
 
-console.log(deepCloner({name:"John", age:20,greeting(){},foo(){}}));
-console.log(deepCloner(0));
+console.log(deepCloner({name:"Jhon",age:34,greeting(){},foo(){}}))
